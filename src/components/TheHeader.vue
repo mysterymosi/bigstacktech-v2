@@ -7,7 +7,7 @@
           <nav class="dope-navbar justify-content-between" id="dopeNav">
             <!-- Logo -->
             <a class="nav-brand" href="index.html">
-              <img src="img/logo.png" alt="">
+              <img class="img-fluid" src="../assets/img/admin-logo.png" alt="">
             </a>
             <!-- Navbar Toggler -->
             <div class="dope-navbar-toggler">

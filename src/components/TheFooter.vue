@@ -4,7 +4,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-3">
-          <img class="admin-logo img-fluid" src="../assets/img/admin logo.png">
+          <img class="admin-logo img-fluid" src="../assets/img/admin-logo.png">
         </div>
         <div class="col-md-3 col-sm-12">
           <p><strong>Company</strong></p>
