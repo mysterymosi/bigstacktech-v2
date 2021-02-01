@@ -1,0 +1,14 @@
+tr,
+td {
+  width: 100%;
+}
+
+img {
+  object-fit: cover;
+  height: 200px;
+  max-width: 200px !important;
+}
+
+th {
+  text-align: center !important;
+}

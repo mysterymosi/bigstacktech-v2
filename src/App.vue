@@ -1,32 +1,37 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+  	<Preloader />
+  	<TheHeader  />
     <router-view />
+    <TheFooter />
+    <!-- <VueInjectJs src="/js/owl.carousel.min.js" />
+    <VueInjectJs src="/js/jquery.stellar.min.js" />
+    <VueInjectJs src="/js/jquery.counterup.min.js" />
+    <VueInjectJs src="/js/waypoints.min.js" /> -->
+    <VueInjectJs src="/js/main.js" />
+    <VueInjectJs src="https://js.paystack.co/v1/inline.js" />
   </div>
 </template>
-
+<script>
+import VueInjectJs from "vue-inject-js";
+import TheHeader from "@/components/TheHeader.vue"
+import Preloader from "@/components/Preloader.vue"
+import TheFooter from "@/components/TheFooter.vue"
+export default {
+  components: {
+    VueInjectJs,
+    TheHeader,
+    TheFooter,
+    Preloader
+  }
+}
+</script>
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+@import url("./assets/css/font-awesome.min.css");
+@import url("./assets/css/bootstrap.min.css");
+@import url("./assets/css/themify-icons.css");
+@import url("./assets/css/owl.carousel.min.css");
+@import url("./assets/css/animate.css");
+@import url("./assets/css/style.css");
+@import url("./assets/css/responsive.css");
 </style>
